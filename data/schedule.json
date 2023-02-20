@@ -1,0 +1,72 @@
+[
+    {
+      "date": "TER",
+      "activities": [
+        {
+          "title": "[GI] JIU-JITSU - Todos os Niveís",
+          "start": "20:00",
+          "end": "22:00",
+          "instructors": [
+            {
+              "name": "João Castro",
+              "photo": true
+            }
+          ],
+          "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
+          "emoji": "🥋"
+        }
+      ]
+    },
+    {
+      "date": "QUA",
+      "activities": [
+        {
+          "title": "[NO-GI] JIU-JITSU - Todos os Niveís",
+          "start": "20:00",
+          "end": "22:00",
+          "instructors": [
+            {
+              "name": "Pedro Brandão"
+            }
+          ],
+          "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
+          "emoji": "🤼"
+        }
+      ]
+    },
+    {
+      "date": "QUI",
+      "activities": [
+        {
+          "title": "[GI] JIU-JITSU - Todos os Niveís",
+          "start": "20:00",
+          "end": "22:00",
+          "instructors": [
+            {
+              "name": "João Castro",
+              "photo": true
+            }
+          ],
+          "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
+          "emoji": "🥋"
+        }
+      ]
+    },
+    {
+      "date": "SAB",
+      "activities": [
+        {
+          "title": "[GI] JIU-JITSU - Todos os Niveís",
+          "start": "17:00",
+          "end": "19:00",
+          "instructors": [
+            {
+              "name": "Pedro Brandão"
+            }
+          ],
+          "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
+          "emoji": "🥋"
+        }
+      ]
+    }
+  ]
