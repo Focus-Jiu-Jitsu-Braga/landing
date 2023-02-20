@@ -21,14 +21,14 @@ export default function Schedule() {
       </Head>
 
       <Container>
-      <main className="flex w-full flex-1 flex-col my-auto">
+      <main className="flex w-full flex-1 flex-col my-auto mt-10 xl:mt-0">
         <div className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Mapa de Aulas
           </h1>
         </div>
 
-        <div class="grid grid-cols-2">
+        <div class="xl:grid xl:grid-cols-2">
         {schedule.map((day) => (
           <div className="sm:flex sm:py-4" key={day}>
             <div className="py-4 sm:py-0 sm:p-10 flex-shrink-0 sm:mr-4">
