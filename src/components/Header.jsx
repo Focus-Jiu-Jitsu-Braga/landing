@@ -6,7 +6,8 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import avatarImage from '@/images/castrobjj.png'
+import castroLogo from '@/images/castro-logo.jpg'
+import focusLogo from '@/images/focus.jpg'
 
 function CloseIcon(props) {
   return (
@@ -224,7 +225,7 @@ function AvatarContainer({ className, ...props }) {
   )
 }
 
-function Avatar({ large = false, className, ...props }) {
+function Avatar({ image, large = false, className, ...props }) {
   return (
     <Link
       href="/"
@@ -233,7 +234,29 @@ function Avatar({ large = false, className, ...props }) {
       {...props}
     >
       <Image
-        src={avatarImage}
+        src={castroLogo}
+        alt=""
+        sizes={large ? '4rem' : '2.25rem'}
+        className={clsx(
+          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
+          large ? 'h-20 w-20' : 'h-9 w-9'
+        )}
+        priority
+      />
+    </Link>
+  )
+}
+
+function Avatar1({ image, large = false, className, ...props }) {
+  return (
+    <Link
+      href="/"
+      aria-label="Home"
+      className={clsx(className, 'pointer-events-auto')}
+      {...props}
+    >
+      <Image
+        src={focusLogo}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
@@ -372,7 +395,7 @@ export function Header() {
                 className="top-[var(--avatar-top,theme(spacing.3))] w-full"
                 style={{ position: 'var(--header-inner-position)' }}
               >
-                <div className="relative">
+                <div className="flex items-center space-x-4 relative">
                   <AvatarContainer
                     className="absolute left-0 top-3 origin-left transition-opacity"
                     style={{
@@ -381,6 +404,11 @@ export function Header() {
                     }}
                   />
                   <Avatar
+                    large
+                    className="block h-20 w-20 origin-left"
+                    style={{ transform: 'var(--avatar-image-transform)' }}
+                  />
+                  <Avatar1
                     large
                     className="block h-20 w-20 origin-left"
                     style={{ transform: 'var(--avatar-image-transform)' }}

@@ -8,11 +8,22 @@ import {
   GitHubIcon,
   InstagramIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image0 from '@/images/photos/0.jpg'
+import image1 from '@/images/photos/1.jpg'
+import image2 from '@/images/photos/2.jpg'
+import image3 from '@/images/photos/3.jpg'
+import image4 from '@/images/photos/4.jpg'
+import image5 from '@/images/photos/5.jpg'
+import image6 from '@/images/photos/6.jpg'
+import image7 from '@/images/photos/7.jpg'
+import image8 from '@/images/photos/8.jpg'
+import image9 from '@/images/photos/9.jpg'
+import image10 from '@/images/photos/10.jpg'
+import image11 from '@/images/photos/11.jpg'
+import image12 from '@/images/photos/12.jpg'
+import image13 from '@/images/photos/13.jpg'
+import image14 from '@/images/photos/14.jpg'
+import image15 from '@/images/photos/15.jpg'
 
 function MailIcon(props) {
   return (
@@ -81,13 +92,11 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
+function Photos({photos , rotations}) {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {photos.map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -140,11 +149,11 @@ export default function Home() {
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://github.com"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
-            />
+            /> */}
             {/* <SocialLink
               href="https://linkedin.com"
               aria-label="Follow on LinkedIn"
@@ -153,7 +162,9 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Photos />
+      <Photos photos={[image9, image0, image10, image8, image3]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image1, image2, image7, image4, image5]}  rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
+      <Photos photos={[image6, image11, image14, image12, image15]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
     </>
   )
 }

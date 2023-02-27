@@ -67,54 +67,45 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                Professor João Castro, começou o mundo das lutas quando tinha 17 iniciando na luta livre brasileiro, com o professor Carlos Pereira em Guimarães, mantendo o contacto com a luta livre até aos dias de hoje, durante esse trajecto consagrou-se algumas vezes campeão nacional atingindo o podio também várias vezes, ganhando também por duas vezes consecutivas o desafio da luta livre contra o jiu jitsu em Portugal.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                Em 2012 começou a praticar também jiu jitsu, com o professor Manoel Neto em matosinhos, nas faixas coloridas conquistou também o título de campeão europeu,internacional e nacional por várias vezes, em Dezembro de 2015 recebeu a faixa preta pelas mãos do seu professor, no campeonato nacional desse mesmo ano foi vice campeão na categoria e campeão no absoluto adulto, após entrar na categoria de master, já conquistou também alguns pódios e também já se consagrou campeão nacional e internacional em campeonatos organizados pela ibjjf e pela fpjjb.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+              Começou o trajeto como professor de luta livre em 2005 aos 23 anos em Braga.
+Hoje em dia além de continuar em braga está em Ponte de lima e Guimarães que é  a sua cidade natal. Iniciou as aulas de jiu jitsu em 2013.
+Já vão quase duas décadas como professor, tem turmas divididas em varias faixas etárias, e alunos dos 3 aos 79 anos. 
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+              Durante este percurso formou 10 faixas pretas, mais de uma dezena faixas marrons, mais de duas dezenas de faixas roxas e mais de quatro dezenas de faixas azuis. Vários dos seus alunos já foram campeões nacionais, internacionais, e europeus em campeonatos organizados pela ibjjf e fpjjb. 
+              </p>
+              <p>
+              Ajudar o próximo a conquistar as suas próprias batalhas é o seu objetivo principal.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              {/* <SocialLink href="#" icon={TwitterIcon}>
                 Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+              </SocialLink> */}
+              <SocialLink href="https://www.instagram.com/castro_gmr/" icon={InstagramIcon} className="mt-4">
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+              {/* <SocialLink href="#" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
               <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
-              </SocialLink>
-              <SocialLink
+              </SocialLink> */}
+              {/* <SocialLink
                 href="mailto:spencer@planetaria.tech"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 spencer@planetaria.tech
-              </SocialLink>
+              </SocialLink> */}
             </ul>
           </div>
         </div>
