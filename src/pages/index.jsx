@@ -92,10 +92,10 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Photos({photos , rotations}) {
+function Photos({ photos, rotations }) {
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 max-w-screen-2xl mx-auto py-4">
         {photos.map((image, imageIndex) => (
           <div
             key={image.src}
@@ -122,7 +122,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Home | Braga Focus Jiu-Jitsu 
+          Home | Braga Focus Jiu-Jitsu
         </title>
         <meta
           name="description"
@@ -135,7 +135,7 @@ export default function Home() {
             Focus jiu jitsu Braga
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A filial de Braga da equipa Campeã Nacional que forma Campeões Mundiais e Europeus, situada na sede desportiva de sta. Tecla. 
+            A filial de Braga da equipa Campeã Nacional que forma Campeões Mundiais e Europeus, situada na sede desportiva de sta. Tecla.
             Estamos com inscrições abertas para todos os níveis e idades! Vem conhecer-nos!
           </p>
           <div className="mt-6 flex gap-6">
@@ -162,9 +162,9 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Photos photos={[image9, image0, image10, image8, image3]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
-      <Photos photos={[image1, image2, image7, image4, image5]}  rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
-      <Photos photos={[image6, image11, image14, image12, image15]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image9, image0, image10, image8, image3]} rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image1, image2, image7, image4, image5]} rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
+      <Photos photos={[image6, image11, image14, image12, image15]} rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
     </>
   )
 }
