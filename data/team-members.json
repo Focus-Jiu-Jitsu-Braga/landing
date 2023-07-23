@@ -2,12 +2,12 @@
     {
       "name": "João Castro",
       "image": "joaocastro.jpg",
-      "belt" : "Branca"
+      "belt" : "Preta"
     },
     {
       "name": "Pedro Brandão",
-      "image": "joaocastro.jpg",
-      "belt" : "Branca"
+      "image": "",
+      "belt" : "Roxa"
     },
     {
       "name": "Daniel Pereira",
@@ -26,7 +26,12 @@
     },
     {
       "name": "Diogo Pacheco",
-      "image": "joaocastro.jpg",
+      "image": "",
       "belt" : "Branca"
+    },
+    {
+      "name": "Daniel Du",
+      "image": "",
+      "belt" : "Azul"
     }
   ]

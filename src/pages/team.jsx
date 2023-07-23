@@ -27,24 +27,28 @@ export default function Team() {
             </Container>
 
             <Container className="mt-16 sm:mt-32">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:justify-center">
-                    {team.map((entry) => (
-                        <div key={entry.id} className="p-4">
-                            <Image
-                                alt={entry.name}
-                                src={`/team/${entry.image}`}
-                                width={190}
-                                height={190}
-                                className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                            />
-                            <h2 className="mt-2 text-center text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-base">
-                                {entry.name}
-                            </h2>
-                            <h2 className="mt-2 text-center text-base tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-base">
-                                Faixa {entry.belt}
-                            </h2>
-                        </div>
-                    ))}
+                <div className="flex justify-center">
+                    <div className="flex flex-wrap justify-center">
+                        {team.map((entry) => (
+                            <div key={entry.id} className="p-4 flex flex-col items-center">
+                                <div className="aspect-w-1 aspect-h-1">
+                                    <Image
+                                        alt={entry.name}
+                                        src={entry.image ? `/team/${entry.image}` : '/team/fallback.jpg'}
+                                        width={190}
+                                        height={190}
+                                        className="rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+                                    />
+                                </div>
+                                <h2 className="mt-2 text-center text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                    {entry.name}
+                                </h2>
+                                <h2 className="text-center text-base tracking-tight text-zinc-800 dark:text-zinc-100">
+                                    Faixa {entry.belt}
+                                </h2>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </Container>
         </div>
