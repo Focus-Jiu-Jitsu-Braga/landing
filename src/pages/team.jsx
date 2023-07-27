@@ -37,7 +37,7 @@ export default function Team() {
                                         src={entry.image ? `/team/${entry.image}` : '/team/fallback.jpg'}
                                         width={190}
                                         height={190}
-                                        className="rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+                                        className="rounded-2xl shadow bg-zinc-100 dark:bg-zinc-800"
                                     />
                                 </div>
                                 <h2 className="mt-2 text-center text-base font-bold tracking-tight text-zinc-800 dark:text-zinc-100">

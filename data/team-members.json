@@ -5,23 +5,53 @@
       "belt" : "Preta"
     },
     {
+      "name": "Marco Caldas",
+      "image": "",
+      "belt" : "Preta"
+    },
+    {
+      "name": "Rui Lages",
+      "image": "",
+      "belt" : "Castanha"
+    },
+    {
       "name": "Pedro Brandão",
       "image": "",
       "belt" : "Roxa"
     },
     {
+      "name": "Hélder Moreira",
+      "image": "",
+      "belt" : "Roxa"
+    },
+    {
+      "name": "Lucas Novo",
+      "image": "",
+      "belt" : "Roxa"
+    },
+    {
+      "name": "Martim Moura",
+      "image": "",
+      "belt" : "Azul"
+    },
+    {
+      "name": "Daniel Du",
+      "image": "",
+      "belt" : "Azul"
+    },
+    {
       "name": "Daniel Pereira",
-      "image": "joaocastro.jpg",
+      "image": "",
       "belt" : "Branca"
     },
     {
       "name": "Inês Presa",
-      "image": "joaocastro.jpg",
+      "image": "",
       "belt" : "Branca"
     },
     {
       "name": "Filipe Felício",
-      "image": "joaocastro.jpg",
+      "image": "",
       "belt" : "Branca"
     },
     {
@@ -30,8 +60,28 @@
       "belt" : "Branca"
     },
     {
-      "name": "Daniel Du",
+      "name": "Pedro Pereira",
       "image": "",
-      "belt" : "Azul"
+      "belt" : "Branca"
+    },
+    {
+      "name": "Esmaf Afonso",
+      "image": "",
+      "belt" : "Branca"
+    },
+    {
+      "name": "Filipe Piloto",
+      "image": "",
+      "belt" : "Branca"
+    },
+    {
+      "name": "Luís Braga",
+      "image": "",
+      "belt" : "Branca"
+    },
+    {
+      "name": "Rui Rua",
+      "image": "",
+      "belt" : "Branca"
     }
   ]
