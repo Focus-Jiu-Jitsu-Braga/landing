@@ -27,7 +27,7 @@ export function Footer() {
                 <NavLink href="https://pelomundo.jiujitsubraga.com/">Fotos</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Focus Jiu-Jitsu Braga. All rights
+                &copy; {new Date().getFullYear()} Focus Jiu Jitsu Braga. All rights
                 reserved.
               </p>
             </div>
