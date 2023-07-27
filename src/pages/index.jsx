@@ -135,7 +135,7 @@ export default function Home() {
             Focus jiu jitsu Braga
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A filial de Braga da equipa Campeã Nacional que forma Campeões Mundiais e Europeus, situada na sede desportiva de sta. Tecla. 
+            A filial de Braga da equipa Campeã Nacional que forma Campeões Mundiais e Europeus, situada na sede desportiva de Santa Tecla. 
             Estamos com inscrições abertas para todos os níveis e idades! Vem conhecer-nos!
           </p>
           <div className="mt-6 flex gap-6">
@@ -144,11 +144,14 @@ export default function Home() {
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             /> */}
+            <div className='flex'>
             <SocialLink
               href="https://instagram.com/focus.jiujitsubraga/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
+            <a href="https://instagram.com/focus.jiujitsubraga/" className='pl-2 text-zinc-600 dark:text-zinc-400'>Follow on Instagram</a>
+            </div>
             {/* <SocialLink
               href="https://github.com"
               aria-label="Follow on GitHub"
