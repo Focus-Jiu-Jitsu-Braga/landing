@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -92,11 +93,43 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Photos({photos , rotations}) {
+function Photos({ photos, rotations }) {
+  const photosRef = useRef(null);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    const photosContainer = photosRef.current;
+    const totalWidth = photosContainer.scrollWidth;
+    const containerWidth = photosContainer.offsetWidth;
+
+    const slideAnimation = () => {
+      if (!isPaused) {
+        photosContainer.scrollLeft += 1;
+        if (photosContainer.scrollLeft >= totalWidth / 2) {
+          photosContainer.scrollLeft = 0;
+        }
+      }
+    };
+
+    const interval = setInterval(slideAnimation, 20);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
+
+  const tripledPhotos = [...photos, ...photos, ...photos];
+
   return (
     <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {photos.map((image, imageIndex) => (
+      <div
+        ref={photosRef}
+        className={clsx(
+          'flex justify-start gap-5 overflow-hidden py-4 sm:gap-8 space-x-5 sm:space-x-8',
+          'animate-slideAnimation',
+        )}
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        {tripledPhotos.map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -114,7 +147,7 @@ function Photos({photos , rotations}) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default function Home() {
