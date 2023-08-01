@@ -104,7 +104,7 @@ function ArrowDownIcon(props) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-red-400 transition" />
     </Link>
   )
 }
@@ -184,22 +184,25 @@ export default function Home() {
             Focus jiu jitsu Braga
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A filial de Braga da equipa Campeã Nacional que forma Campeões Mundiais e Europeus, situada na sede desportiva de Santa Tecla. 
+            A filial de Braga da equipa <span class="font-bold text-zinc-800 dark:text-zinc-200"> Campeã Nacional que forma Campeões Mundiais e Europeus </span>, situada na sede desportiva de Santa Tecla. 
             Estamos com inscrições abertas para todos os níveis e idades! Vem conhecer-nos!
           </p>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 gap-6">
             {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             /> */}
-            <div className='flex'>
-            <SocialLink
-              href="https://instagram.com/focus.jiujitsubraga/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <a href="https://instagram.com/focus.jiujitsubraga/" className='pl-2 text-zinc-600 dark:text-zinc-400'>Follow on Instagram</a>
+            <div className='flex animate-bounce'>
+              <SocialLink
+                href="https://instagram.com/focus.jiujitsubraga/"
+                aria-label="Follow on Instagram"
+                icon={InstagramIcon}
+              />
+              <a href="https://instagram.com/focus.jiujitsubraga/" className='pl-2 text-red-400'>Follow on Instagram</a>
+            </div>
+            <div class="mt-4">
+            <a href="" className='text-zinc-800 dark:text-zinc-200'>Rua Jaime Sotto Mayor, Nº20, Braga, Portugal</a>
             </div>
             {/* <SocialLink
               href="https://github.com"
