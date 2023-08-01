@@ -7,6 +7,7 @@ import DefaultPhoto from "@/components/DefaultPhoto";
 
 
 import castro from '@/images/instructors/castro.jpg'
+import brandao from '@/images/instructors/brandao.jpg'
 
 export default function Schedule() {
   return (
@@ -56,14 +57,11 @@ export default function Schedule() {
                               <div className="flex group-hover:hidden items-center -space-x-5 mt-4">
                                 {activity.instructors.map((instructor) => (
                                   <div className="flex-shrink-0" key={instructor}>
-                                    {(instructor.photo && (
-                                      /* eslint-disable @next/next/no-img-element */
                                     <Image
-                                      src={castro}
+                                      src={instructor.name == "João Castro" ? castro : brandao}
                                       alt=""
                                       className="h-10 w-10 rounded-full"
                                     />
-                                    )) || <DefaultPhoto name={instructor.name} />}
                                   </div>
                                 ))}
                               </div>
@@ -74,16 +72,11 @@ export default function Schedule() {
                                     key={instructor}
                                   >
                                     <div className="flex-shrink-0">
-                                      {(instructor.photo && (
-                                        /* eslint-disable @next/next/no-img-element */
-                                        <Image
-                                          src={castro}
-                                          alt=""
-                                          className="h-10 w-10 rounded-full"
-                                        />
-                                      )) || (
-                                        <DefaultPhoto name={instructor.name} />
-                                      )}
+                                      <Image
+                                        src={instructor.name == "João Castro" ? castro : brandao}
+                                        alt=""
+                                        className="h-10 w-10 rounded-full"
+                                      />
                                     </div>
                                     <div className="flex-1 min-w-0">
                                       <div className="focus:outline-none">
@@ -107,14 +100,11 @@ export default function Schedule() {
                                 key={instructor}
                               >
                                 <div className="flex-shrink-0">
-                                  {(instructor.photo && (
-                                    /* eslint-disable @next/next/no-img-element */
                                     <Image
-                                      src={castro}
+                                      src={instructor.name == "João Castro" ? castro : brandao}
                                       alt=""
                                       className="h-10 w-10 rounded-full"
                                     />
-                                  )) || <DefaultPhoto name={instructor.name} />}
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <div className="focus:outline-none">

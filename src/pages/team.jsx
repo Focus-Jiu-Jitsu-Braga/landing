@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Container } from '@/components/Container';
-import { useState, useEffect } from 'react';
 
 import team from '/data/team-members.json';
 

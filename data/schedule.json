@@ -8,8 +8,7 @@
           "end": "22:00",
           "instructors": [
             {
-              "name": "João Castro",
-              "photo": true
+              "name": "João Castro"
             }
           ],
           "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
@@ -43,8 +42,7 @@
           "end": "22:00",
           "instructors": [
             {
-              "name": "João Castro",
-              "photo": true
+              "name": "João Castro"
             }
           ],
           "location": "Rua Jaime Soutto Maior, Santa Tecla, Braga, Portugal",
