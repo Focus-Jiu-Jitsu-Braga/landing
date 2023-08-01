@@ -25,6 +25,22 @@ import image12 from '@/images/photos/12.jpg'
 import image13 from '@/images/photos/13.jpg'
 import image14 from '@/images/photos/14.jpg'
 import image15 from '@/images/photos/15.jpg'
+import image17 from '@/images/photos/17.jpg'
+import image18 from '@/images/photos/18.jpg'
+import image19 from '@/images/photos/19.jpg'
+import image20 from '@/images/photos/20.jpg'
+import image21 from '@/images/photos/21.jpg'
+import image23 from '@/images/photos/23.jpg'
+import image24 from '@/images/photos/24.jpg'
+import image25 from '@/images/photos/25.jpg'
+import image26 from '@/images/photos/26.jpg'
+import image27 from '@/images/photos/27.jpg'
+import image28 from '@/images/photos/28.jpg'
+import image29 from '@/images/photos/29.jpg'
+import image30 from '@/images/photos/30.jpg'
+import image31 from '@/images/photos/31.jpg'
+import image32 from '@/images/photos/32.jpg'
+import image33 from '@/images/photos/33.jpg'
 
 function MailIcon(props) {
   return (
@@ -198,9 +214,10 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Photos photos={[image9, image0, image10, image8, image3]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
-      <Photos photos={[image1, image2, image7, image4, image5]}  rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
-      <Photos photos={[image6, image11, image14, image12, image15]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image21, image23, image18, image28, image29, image14, image26, image25]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image27, image17, image19, image20, image24, image30, image31, image10]}  rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
+      <Photos photos={[image9, image0, image8, image3, image2, image7, image4, image1]}  rotations={['rotate-2', '-rotate-2', 'rotate-2', '-rotate-2', '-rotate-2']} />
+      <Photos photos={[image6, image11, image12, image15, image13, image5, image32, image33]}  rotations={['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']} />
     </>
   )
 }
